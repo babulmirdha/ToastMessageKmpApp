@@ -10,7 +10,9 @@ import org.babulmirdha.toast_message.utils.ContextHolder
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        ContextHolder.current = applicationContext
+
+        ContextHolder.init(this)
+
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
 
